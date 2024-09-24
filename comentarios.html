@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentarios - Tienda Verde</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <h2 class="logo">MiTienda</h2>
+            <ul>
+                <li id="txt-nav-a"><a id="txt-nav" href="index.html">Inicio</a></li>
+                <hr id="menu-divide">
+                <li id="txt-nav-a"><a id="txt-nav" href="catalogo.html">Catálogo</a></li>
+                <hr id="menu-divide">
+                <li id="txt-nav-a"><a id="txt-nav" href="carrito.html">Carrito</a></li>
+                <hr id="menu-divide">
+                <li id="txt-nav-a"><a id="txt-nav" href="login.html">Iniciar sesión</a></li>
+                <hr id="menu-divide">
+                <li id="txt-nav-a"><a id="txt-nav" href="contacto.html">Contacto</a></li>
+                <hr id="menu-divide">
+            </ul>
+        </nav>
+    
+        <div class="content">
+            <button class="menu-btn">☰</button>
+            <h2>Bienvenidos a MiTienda</h2>
+            <p>Explora nuestros productos más populares.</p>
+        </div>
+    
+        <script src="scripts.js"></script>
+    </header>
+
+    <!-- Comentarios -->
+    <section id="comentarios">
+        <h2>Comentarios</h2>
+        <div id="comentarios-lista">
+            <p>No hay comentarios aún.</p>
+        </div>
+        <form id="comentario-form" class="hidden">
+            <textarea id="comentario-texto" placeholder="Escribe tu comentario aquí"></textarea>
+            <button type="submit">Comentar</button>
+        </form>
+        <p id="login-reminder" class="hidden">Debes iniciar sesión para dejar un comentario.</p>
+    </section>

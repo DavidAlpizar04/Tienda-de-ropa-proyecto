@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - Tienda Verde</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <h2 class="logo">MiTienda</h2>
+            <ul>
+                <li id="txt-nav-a"><a id="txt-nav" href="index.html">Inicio</a></li>
+                <hr id="menu-divide">
+                <li id="txt-nav-a"><a id="txt-nav" href="catalogo.html">Catálogo</a></li>
+                <hr id="menu-divide">
+                <li id="txt-nav-a"><a id="txt-nav" href="carrito.html">Carrito</a></li>
+                <hr id="menu-divide">
+                <li id="txt-nav-a"><a id="txt-nav" href="login.html">Iniciar sesión</a></li>
+                <hr id="menu-divide">
+                <li id="txt-nav-a"><a id="txt-nav" href="contacto.html">Contacto</a></li>
+                <hr id="menu-divide">
+            </ul>
+        </nav>
+    
+        <div class="content">
+            <button class="menu-btn">☰</button>
+        </div>
+    
+        <script src="scripts.js"></script>
+    </header>
+
+    <!-- Login -->
+    <section id="login">
+        <h2 id="txt-sesion">Iniciar Sesión</h2>
+        <form id="login-form">
+            <label class="username" for="username">Usuario:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label class="password" for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button id="boton-submit" type="submit">Iniciar Sesión</button>
+        </form>
+        
+        <p id="no-user">¿No tienes cuenta? <a href="#">Regístrate aquí</a></p>
+        <div id="login-response" class="hidden">
+            <p id="no-user">Has iniciado sesión correctamente.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tienda Verde</p>
+    </footer>
+</body>
+</html>

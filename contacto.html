@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Tienda Verde</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <h2 class="logo">MiTienda</h2>
+            <ul id="list-nav">
+                <li><a id="txt-nav" href="index.html">Inicio</a></li>
+                <li><a id="txt-nav" href="catalogo.html">Catálogo</a></li>
+                <li><a id="txt-nav" href="carrito.html">Carrito</a></li>
+                <li><a id="txt-nav" href="login.html">Iniciar sesión</a></li>
+                <li><a id="txt-nav" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    
+        <div class="content">
+            <button class="menu-btn">☰</button>
+            <h2 id="welcome-shop">Bienvenidos a MiTienda</h2>
+            <p id="welcome-shop-txt">Explora nuestros productos más populares.</p>
+        </div>
+    
+        <script src="scripts.js"></script>
+    </header>
+
+    <!-- Contacto -->
+    <section id="contacto">
+        <h2 id="txt-contact">Contacto</h2>
+        <p id="txt-contact">Puedes ponerte en contacto con nosotros a través del siguiente formulario:</p>
+        <form id="contact-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+
+        <div id="response-message" class="hidden">
+            <p id="txt-contact">Gracias por tu mensaje, te responderemos pronto.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tienda Verde</p>
+    </footer>
+</body>
+</html>
